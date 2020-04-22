@@ -1,0 +1,233 @@
+@font-face{
+    font-family: "Josefin Sans-300";
+    src: url('fonts/JosefinSans-Light.ttf') format("truetype");
+}
+
+@font-face{
+    font-family: "Josefin Sans-400";
+    src: url('fonts/JosefinSans-Regular.ttf') format("truetype");
+}
+
+@font-face{
+    font-family: "Josefin Sans-600";
+    src: url('fonts/JosefinSans-SemiBold.ttf') format("truetype");
+}
+
+*{
+    /*Colors*/
+    --desatured-Red: hsl(9,36%, 70%);
+    --soft-Red: hsl(0, 93%, 68%);
+    --dark-Grayish-Red: hsl(0, 6%, 24%);
+    /*Gradients*/
+    --lightRed-to-Gray: linear-gradient(135deg, hsl(0, 76%, 92%), hsl(0, 100%, 98%));
+    --lightPink-to-Pink: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    /*Fonts*/
+    font-size: 16px;
+}
+
+/*General*/
+html{
+    margin: 0;
+    padding: 0;
+    width: 375px;
+    height: 800px;
+}
+
+body{
+    width: 375px;
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    background-color: hsl(0, 100%, 99%);
+    padding-bottom: 100px;
+}
+
+/*Main Title*/
+h1{
+    font-family: "Josefin Sans-300";
+    color: var(--desatured-Red);
+    text-align: center;
+    font-size: 2.5em;
+    width: fit-content;
+    letter-spacing: 0.3em;
+}
+
+h1:not(.dark){
+    margin-top: 65px;
+    margin-left: 96px;
+}
+
+.dark{
+    margin-top: -0.7em;
+    font-family: "Josefin Sans-400";
+    color: var(--dark-Grayish-Red);
+}
+
+/*Cover*/
+#woman{
+    background-image: url("images/hero-mobile.jpg");
+    width: 375px;
+    height: 250px;
+    text-indent: -9999px;
+}
+
+/*Main Text*/
+section p{
+    font-family: "Josefin Sans-400";
+    color: var(--desatured-Red);
+    width: 350px;
+    text-align: center;
+    margin: 12.5px;
+    margin-bottom: 40px;
+    margin-top: -15px;
+}
+
+/*Header*/
+header{
+    margin: 20px 0 25px 30px;
+    color: #fff;
+}
+
+/*Sign with email*/
+input[type=text]:not(placeholder){
+    padding-left: 20px;
+    width: 260px;
+    background: url("images/bg-pattern-desktop.svg");
+    border: 1px solid var(--desatured-Red);
+    border-radius: 25px;
+    opacity: 50%;
+    height: 3em;
+    font-family: "Josefin Sans-400";
+    font-size: 0.9em;
+    margin-left: 30px;
+}
+
+input::placeholder{
+    color: var(--desatured-Red);
+    opacity: 70%;
+}
+
+button{
+    float: right;
+    width: 65px;
+    margin-right: 40px;
+    background: var(--lightPink-to-Pink);
+    border: 0;
+    border-radius: 25px;
+    height: 48px;
+    margin-top: -48px;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 15px 30px 0px hsl(0, 60%, 86%);
+}
+
+button:hover{
+    background: hsl(0, 100%, 92%);
+}
+
+@media only screen and (min-width: 1440px){
+    
+/*General*/
+html{
+    margin: 0;
+    padding: 0;
+    width: 1440px;
+    height: 800px;
+}
+
+body{
+    width: 1440px;
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    background-color: hsl(0, 100%, 99%);
+    padding-bottom: 100px;
+}
+
+/*Main Title*/
+h1{
+    font-family: "Josefin Sans-300";
+    color: var(--desatured-Red);
+    text-align: center;
+    font-size: 2.5em;
+    width: fit-content;
+    letter-spacing: 0.3em;
+}
+
+h1:not(.dark){
+    margin-top: 65px;
+    margin-left: 96px;
+}
+
+.dark{
+    margin-top: -0.7em;
+    font-family: "Josefin Sans-400";
+    color: var(--dark-Grayish-Red);
+}
+
+/*Cover*/
+#woman{
+    background-image: url("images/hero-desktop.jpg");
+    width: 610px;
+    height: 800px;
+    text-indent: -9999px;
+    float: right;
+}
+
+/*Main Text*/
+section p{
+    font-family: "Josefin Sans-400";
+    color: var(--desatured-Red);
+    width: 350px;
+    text-align: center;
+    margin: 12.5px;
+    margin-bottom: 40px;
+    margin-top: -15px;
+}
+
+/*Header*/
+header{
+    margin: 20px 0 25px 30px;
+}
+
+/*Sign with email*/
+input[type=text]:not(placeholder){
+    padding-left: 20px;
+    width: 260px;
+    background: url("images/bg-pattern-desktop.svg");
+    border: 1px solid var(--desatured-Red);
+    border-radius: 25px;
+    opacity: 50%;
+    height: 3em;
+    font-family: "Josefin Sans-400";
+    font-size: 0.9em;
+    margin-left: 30px;
+}
+
+input::placeholder{
+    color: var(--desatured-Red);
+    opacity: 70%;
+}
+
+button{
+    float: right;
+    width: 65px;
+    margin-right: 40px;
+    background: var(--lightPink-to-Pink);
+    border: 0;
+    border-radius: 25px;
+    height: 48px;
+    margin-top: -48px;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 15px 30px 0px hsl(0, 60%, 86%);
+}
+
+button:hover{
+    background: hsl(0, 100%, 92%);
+}
+}
