@@ -15,10 +15,12 @@ function generateError(){
     console.log(`Email Inválido: ${email.value}`);
     input.style.borderColor = "red";
     errorDiv = document.createElement("div");
+    errorParagraph = document.createElement('p');
     errorDiv.setAttribute("id", "error");
     content.appendChild(errorDiv);
     errorMessage = document.createTextNode("Please provide a valid email");
-    errorDiv.appendChild(errorMessage);
+    errorParagraph.appendChild(errorMessage);
+    errorDiv.appendChild(errorParagraph);
 
     errorIcon = document.createElement("img");
     errorIcon.setAttribute("src", "images/icon-error.svg");

@@ -118,7 +118,7 @@ button{
     border: 0;
     border-radius: 25px;
     height: 48px;
-    margin-top: -48px;
+    margin-top: -47px;
     position: relative;
     cursor: pointer;
     box-shadow: 0 15px 30px 0px hsl(0, 60%, 86%);
@@ -129,11 +129,10 @@ button:hover{
 }
 
 /*Error*/
-
-#error{
+#error p{
     width: 203px;
     margin-top: 10px;
-    margin-left: 16px;
+    margin-left: 50px;
     font-size: 1em;
     color: red;
     opacity: 100%;
@@ -141,11 +140,8 @@ button:hover{
 }
 
 #error img{
-    width: 24px;
-    position: relative;
-    transform: translate(285px, -61.5px);
+    transform: translate(230px, -101.5px);
     background-repeat: no-repeat;
-    background-position: right;
 }
 
 @media only screen and (min-width: 1440px){
@@ -269,6 +265,7 @@ footer{
 }
 
 #error img{
-    transform: translate(285px, -61.5px);
+    transform: translate(285px, -104.5px);
+    background-repeat: no-repeat;
 }
 }
