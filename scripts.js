@@ -24,6 +24,7 @@ function generateError(){
         errorDiv.appendChild(errorParagraph);
         errorIcon = document.createElement("img");
         errorIcon.setAttribute("src", "images/icon-error.svg");
+        errorIcon.setAttribute("alt", "Error Icon");
         errorDiv.appendChild(errorIcon);
         setTimeout(() => {
             input.style.borderColor = "";

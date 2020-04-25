@@ -73,6 +73,7 @@ h1:not(.dark){
 /*Cover*/
 .woman{
     background-image: url("images/hero-mobile.jpg");
+    alt: "Woman as Model";
     width: 375px;
     height: 250px;
     text-indent: -9999px;
@@ -114,6 +115,17 @@ input::placeholder{
     font-size: 0.9em;
     opacity: 70%;
 }
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
 
 button{
     float: right;
@@ -227,6 +239,7 @@ h1:not(.dark){
 /*Cover*/
 .woman{
     background-image: url("images/hero-desktop.jpg");
+    alt:"Woman as model";
     transform: translateY(-276px);
     height: 800px;
     width: 610px;
