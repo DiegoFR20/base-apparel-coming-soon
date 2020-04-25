@@ -8,6 +8,7 @@ function validateEmail(email){
         input.style.borderColor = "green";
         return true;
     }else
+        input.style.borderColor = "";
         return false;
 }
 
