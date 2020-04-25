@@ -106,7 +106,7 @@ input[type=text]:not(placeholder){
 
 input::placeholder{
     color: var(--desatured-Red);
-    font-size: 0.7em;
+    font-size: 0.9em;
     opacity: 70%;
 }
 
@@ -126,6 +126,26 @@ button{
 
 button:hover{
     background: hsl(0, 100%, 92%);
+}
+
+/*Error*/
+
+#error{
+    width: 203px;
+    margin-top: 10px;
+    margin-left: 16px;
+    font-size: 1em;
+    color: red;
+    opacity: 100%;
+    font-family: "Josefin Sans-400";
+}
+
+#error img{
+    width: 24px;
+    position: relative;
+    transform: translate(285px, -61.5px);
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 @media only screen and (min-width: 1440px){
@@ -220,7 +240,6 @@ h1:not(.dark){
 }
 
 input[type=text]:not(placeholder){
-    font-size: 0.9em;
     margin-left: 0;
     width: 380px;
 }
@@ -241,5 +260,15 @@ footer{
     position: absolute;
     margin-left: 553px;
     margin-bottom: 0;
+}
+
+#error{
+    width: 203px;
+    margin-top: 10px;
+    margin-left: 16px;
+}
+
+#error img{
+    transform: translate(285px, -61.5px);
 }
 }

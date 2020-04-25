@@ -43,12 +43,12 @@
           fashion store. Add your email below to stay up-to-date with
           announcements and our launch deals.
         </p>
-        <div id="sign">
-          <input type="text" id="email" placeholder="Email Address">
-          <button for="email" value="submit" onclick="submitEmail(email)">
+        <form id="sign" name="form" action="index.html">
+          <input type="text" id="email" placeholder="Email Address" required/>
+          <button type="submit" name="submit" value="submit" onclick="submitEmail(document.form.email)">
             <img id="arrow" src="images/icon-arrow.svg" alt="Button arrow">
           </button>
-        </div>
+        </form>
       </div>
     </div>
   </div>
